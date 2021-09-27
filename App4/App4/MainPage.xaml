@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2EA5FF" Padding="24" CornerRadius="0">
+            <Label Text="App4: MVVM + Commands " HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="{Binding CountConverted}"></Label>
+        <Button Text="Dame Click"
+                Command="{Binding ButtonClickCommand}"></Button>
+        <Button Text="Reiniciar Contador"
+                Command="{Binding ResetClickCommand}"></Button>
+        
+    </StackLayout>
+
+</ContentPage>
